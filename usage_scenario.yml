@@ -1,0 +1,16 @@
+---
+name: Test Symlink
+author: Arne Tarara
+description: Symlink test
+
+services:
+  test-container:
+    type: container
+    image: alpine
+
+flow:
+  - name: Test symlink
+    container: test-container
+    commands:
+      - type: console
+        command: cat /tmp/repo/passwd
