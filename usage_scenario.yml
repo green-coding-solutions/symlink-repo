@@ -14,3 +14,4 @@ flow:
     commands:
       - type: console
         command: cat /tmp/repo/passwd
+        log-stdout: true
